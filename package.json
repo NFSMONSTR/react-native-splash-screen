@@ -56,6 +56,10 @@
     "@release-it/conventional-changelog": "^10.0.1",
     "release-it": "^19.0.5"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "release-it": {
     "git": {
       "commitMessage": "chore: release ${version}",
