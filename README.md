@@ -28,6 +28,7 @@ A splash screen API for react-native which can programatically hide and show the
 
 ## Changes
 For React Native >= 0.47.0 use [v3.+](https://github.com/crazycodeboy/react-native-splash-screen/releases), for React Native < 0.47.0 use [v2.1.0](https://github.com/crazycodeboy/react-native-splash-screen/releases/tag/v1.0.9)
+For React Native New Arch(Fabric) use 4.0+
 
 ## Examples  
 * [Examples](https://github.com/crazycodeboy/react-native-splash-screen/tree/master/examples)
@@ -40,9 +41,9 @@ For React Native >= 0.47.0 use [v3.+](https://github.com/crazycodeboy/react-nati
 ## Installation
 
 ### First step(Download):
-Run `npm i react-native-splash-screen --save`
+Run `npm i @nfsmonstr/react-native-splash-screen --save`
 
-### Second step(Plugin Installation):
+### Second step(Plugin Installation). Legacy(Skip to step 3):
 
 #### Automatic installation
 
