@@ -1,14 +1,15 @@
 {
-  "name": "react-native-splash-screen",
-  "version": "3.3.0",
-  "description": "A splash screen for react-native, hide when application loaded ,it works on iOS and Android.",
-  "main": "index.js",
+  "name": "@nfsmonstr/react-native-splash-screen",
+  "version": "4.0.0",
+  "description": "A splash screen for react-native, hide when application loaded ,it works on iOS and Android. Fork of https://github.com/crazycodeboy/react-native-splash-screen.git",
+  "main": "./src/index.ts",
+  "types": "./src/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crazycodeboy/react-native-splash-screen.git"
+    "url": "git+https://github.com/NFSMONSTR/react-native-splash-screen.git"
   },
   "keywords": [
     "react-native",
@@ -22,13 +23,32 @@
     "android",
     "ios"
   ],
-  "author": "crazycodeboy",
+  "files": [
+    "src",
+    "android",
+    "ios",
+    "react-native-splash-screen.podspec"
+  ],
+  "author": "NFS_MONSTR <nfsmonstr@gmail.com> (https://github.com/NFSMONSTR)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/crazycodeboy/react-native-splash-screen/issues"
+    "url": "https://github.com/NFSMONSTR/react-native-splash-screen/issues"
   },
   "peerDependencies": {
-    "react-native": ">=0.57.0"
+    "react": "*",
+    "react-native": "*"
   },
-  "homepage": "https://github.com/crazycodeboy/react-native-splash-screen#readme"
+  "homepage": "https://github.com/NFSMONSTR/react-native-splash-screen#readme",
+  "codegenConfig": {
+    "name": "RNSplashScreenSpec",
+    "type": "all",
+    "jsSrcsDir": "src",
+    "outputDir": {
+      "ios": "ios/generated",
+      "android": "android/generated"
+    },
+    "android": {
+      "javaPackageName": "org.devio.rn.splashscreen"
+    }
+  }
 }

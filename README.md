@@ -1,5 +1,8 @@
 # react-native-splash-screen
 
+Fork of [react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen) by [crazycodeboy](https://github.com/crazycodeboy)
+
+Also contains fixes by [Yogesh Solanki](https://github.com/SolankiYogesh/)
 
 [![Download](https://img.shields.io/badge/Download-v3.3.0-ff69b4.svg) ](https://www.npmjs.com/package/react-native-splash-screen)
 [ ![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](https://github.com/crazycodeboy/react-native-splash-screen/pulls)
@@ -164,6 +167,43 @@ Update `AppDelegate.m` with the following additions:
 @end
 
 ```
+### For React Native 0.77+
+Update `AppDelegate.swift` with the following additions:
+```swift
+import UIKit
+import React
+import React_RCTAppDelegate
+import ReactAppDependencyProvider
+import react_native_splash_screen <-----
+@main
+class AppDelegate: RCTAppDelegate {
+  override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    self.moduleName = "klipzy"
+    self.dependencyProvider = RCTAppDependencyProvider()
+
+    // You can add your custom initial props in the dictionary below.
+    // They will be passed down to the ViewController used by React Native.
+    self.initialProps = [:]
+    react_native_splash_screen.RNSplashScreen.show() <-----
+    return super.application(application, didFinishLaunchingWithOptions: launchOptions)
+  }
+
+  override func sourceURL(for bridge: RCTBridge) -> URL? {
+    self.bundleURL()
+  }
+
+  override func bundleURL() -> URL? {
+#if DEBUG
+    RCTBundleURLProvider.sharedSettings().jsBundleURL(forBundleRoot: "index")
+#else
+    Bundle.main.url(forResource: "main", withExtension: "jsbundle")
+#endif
+  }
+}
+
+
+```
+
 
 ## Getting started  
 
