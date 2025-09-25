@@ -209,7 +209,7 @@ class AppDelegate: RCTAppDelegate {
 
 Import `react-native-splash-screen` in your JS file.
 
-`import SplashScreen from 'react-native-splash-screen'`    
+`import SplashScreen from '@nfsmonstr/react-native-splash-screen'`    
 
 ### Android:
 
@@ -302,7 +302,7 @@ Customize your splash screen via `LaunchScreen.storyboard` or `LaunchScreen.xib`
 Use like so:
 
 ```javascript
-import SplashScreen from 'react-native-splash-screen'
+import SplashScreen from '@nfsmonstr/react-native-splash-screen'
 
 export default class WelcomePage extends Component {
 

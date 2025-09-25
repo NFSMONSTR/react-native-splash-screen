@@ -18,7 +18,7 @@ import {
     TouchableOpacity,
     Linking,
 } from 'react-native'
-import SplashScreen from 'react-native-splash-screen'
+import SplashScreen from '@nfsmonstr/react-native-splash-screen'
 
 export default class example extends Component {
 

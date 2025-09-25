@@ -160,7 +160,7 @@ public class MainActivity extends ReactActivity {
 将 `react-native-splash-screen` 导入你的JS 文件。
 
 
-`import SplashScreen from 'react-native-splash-screen'`
+`import SplashScreen from '@nfsmonstr/react-native-splash-screen'`
 
 **Android:**
 
@@ -204,7 +204,7 @@ iOS可以通过LaunchScreen.storyboard或LaunchScreen.xib来自定义你的启�
 最后，你可以在适当的时候关闭启动屏幕（如：启动初始化完成后）:
 
 ```JavaScript
-import SplashScreen from 'react-native-splash-screen'
+import SplashScreen from '@nfsmonstr/react-native-splash-screen'
 
 export default class WelcomePage extends Component {
 

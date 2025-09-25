@@ -16,7 +16,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import SplashScreen from 'react-native-splash-screen';
+import SplashScreen from '@nfsmonstr/react-native-splash-screen';
 import {
   Colors,
   DebugInstructions,
