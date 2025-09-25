@@ -5,7 +5,8 @@
   "main": "./src/index.ts",
   "types": "./src/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "release-it --only-version"
   },
   "repository": {
     "type": "git",
@@ -49,6 +50,28 @@
     },
     "android": {
       "javaPackageName": "org.devio.rn.splashscreen"
+    }
+  },
+  "devDependencies": {
+    "release-it": "^19.0.5"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": {
+          "name": "angular"
+        }
+      }
     }
   }
 }
