@@ -1,6 +1,6 @@
 {
   "name": "@nfsmonstr/react-native-splash-screen",
-  "version": "4.1.1",
+  "version": "5.0.0",
   "description": "A splash screen for react-native, hide when application loaded, it works on iOS and Android. Reworked fork of https://github.com/crazycodeboy/react-native-splash-screen.git",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
