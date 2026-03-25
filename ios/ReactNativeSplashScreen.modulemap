@@ -1,0 +1,4 @@
+module ReactNativeSplashScreen {
+  header "ReactNativeSplashScreen.h"
+  export *
+}
