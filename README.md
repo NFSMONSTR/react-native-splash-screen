@@ -8,6 +8,25 @@ Works on **iOS** (UIKit window overlay) and **Android** (AndroidX SplashScreen A
 
 ---
 
+## Versions
+
+This package has two maintained release lines:
+
+| Version | Branch | Implementation | When to use |
+|---|---|---|---|
+| **5.x** (current) | [`master`](https://github.com/NFSMONSTR/react-native-splash-screen/tree/master) | Android: AndroidX SplashScreen API · iOS: LaunchScreen overlay | New projects |
+| **4.x** | [`v4`](https://github.com/NFSMONSTR/react-native-splash-screen/tree/v4) | Original approach, API-compatible with [crazycodeboy/react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen) | Migrating from crazycodeboy's library without changing native setup |
+
+To install 4.x:
+
+```sh
+npm install @nfsmonstr/react-native-splash-screen@^4
+```
+
+The rest of this README describes **5.x**. For 4.x setup, see the [v4 README](https://github.com/NFSMONSTR/react-native-splash-screen/tree/v4#readme).
+
+---
+
 ## Requirements
 
 | | Minimum |
